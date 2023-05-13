@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from "react"
 
-function counter() {
+function Counter(props) {
+  const [count, setCount] = useState(0)
+
   return (
-    <div>counter</div>
+    <div>
+      <button onClick={() => setCount(count + 1)}>Copy That</button>
+    </div>
   )
 }
 
-export default counter
+export default Counter
